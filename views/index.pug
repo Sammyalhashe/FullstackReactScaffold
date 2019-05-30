@@ -1,0 +1,14 @@
+// NOTE: See the following resource
+// https://pugjs.org/language/interpolation.html
+// Also https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1
+doctype html
+head
+    meta(charset='utf-8')
+    title React Fullstack Scaffolding
+    script(type="text/javascript").
+        window.initialData = !{JSON.stringify(initialData)};
+    
+body
+    div#root !{initialMarkup}
+
+    script(src="/bundle.js", charset="utf-8")
