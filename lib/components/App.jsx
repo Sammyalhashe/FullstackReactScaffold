@@ -1,6 +1,11 @@
-import { hot } from "react-hot-loader/root";
 import React from "react";
+import { hot } from "react-hot-loader/root";
+import styled from "styled-components";
 import HelloWorld from "./otherComponents/HelloWorld";
+
+const Main = styled.div`
+    border: black solid 4px;
+`;
 
 class App extends React.Component {
     constructor(props) {
@@ -12,10 +17,9 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
-                Hello FullStack React + Express!
+            <Main>
                 <HelloWorld />
-            </div>
+            </Main>
         );
     }
 }
